@@ -10,7 +10,7 @@ export default function NavMenu1(){
           <Link to={"/"}>
             <img
               className="w-40"
-              src="/public/logo.png"
+              src="/logo.png"
               alt="MeeStoreLogo"
             />
           </Link>
