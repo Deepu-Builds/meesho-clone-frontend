@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Section1 = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const Section1 = () => {
         </h1>
         <button className="  bg-white p-[20px] pl-15 pr-15 rounded-xl text-2xl absolute bottom-35 right-95 hover:cursor-pointer">
           {" "}
-          <h3>Show Now</h3>
+          <Link to={'/'}>Show Now</Link>
         </button>
       </div>
       <span className="bg-pink-100 flex w-full justify-center h-13 items-center pr-2 pl-2 p-8">

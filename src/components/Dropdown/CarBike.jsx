@@ -24,7 +24,7 @@ function CarBike() {
               <h1 className="text-[#9F2089] leading-10 font-bold mb-2">{category.name}</h1>
               <div className="flex flex-col gap-1">
                 {category.subcategories.map((item, j) => (
-                  <Link key={j} className="text-gray-700">
+                  <Link to={`/${item}`}  key={j} className="text-gray-700">
                     {item}
                   </Link>
                 ))}

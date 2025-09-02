@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { User2Icon, ShoppingBagIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ProfileMenu() {
   const [open, setOpen] = useState(false);
@@ -25,17 +26,17 @@ export default function ProfileMenu() {
           </p>
 
           {/* Sign Up button */}
-          <button className="w-full bg-[#9F2089] text-white py-2 rounded-md font-medium hover:bg-[#8f227c]">
+          <Link to={"/login"} className="w-full  bg-[#9F2089] text-white p-2 rounded-md font-medium hover:bg-[#8f227c]">
             Sign Up
-          </button>
+          </Link>
 
           <div className="border-t my-3"></div>
 
           {/* Orders */}
-          <div className="flex items-center gap-2 py-2 hover:text-[#9F2089]  cursor-pointer">
+          <Link to={'/myorders'} className="flex items-center gap-2 py-2 hover:text-[#9F2089]  cursor-pointer">
             <ShoppingBagIcon className="w-4 h-4" />
             <span>My Orders</span>
-          </div>
+          </Link>
 
           <div className="border-t my-3"></div>
 

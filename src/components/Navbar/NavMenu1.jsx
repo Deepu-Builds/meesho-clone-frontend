@@ -29,12 +29,12 @@ export default function NavMenu1(){
         </div>
 
         <div className="NavMenu flex gap-6.5 pr-10 justify-center items-center">
-          <Link>
+          <Link to={"/supplier"}>
             <p>Become a Supplier</p>
           </Link>
           <span className="w-0.5 h-8 bg-gray-300"></span>
 
-          <Link>
+          <Link to={'/investor_relations'}>
             <p>Investor Relations</p>
           </Link>
           <span className="w-0.5 h-8 bg-gray-300"></span>
@@ -43,13 +43,11 @@ export default function NavMenu1(){
             <ProfileMenu />
           </Link>
 
-          <Link className="flex flex-col items-center">
+          <Link to={'/cart'} className="flex flex-col items-center">
             <ShoppingCart className="w-5 h-5" />
             <p>Cart</p>
           </Link>
-
-          <Link></Link>
-        </div>
+        </div>    
       </div>
       <div className="w-full h-[1px] bg-gray-300"></div>
 
